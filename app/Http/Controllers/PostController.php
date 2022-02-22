@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 // Postモデルを使う宣言
 use App\Post;
-use Auth;
+// use Auth;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 

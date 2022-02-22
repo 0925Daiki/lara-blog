@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Comment;
-use Auth;
+// use Auth;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 
@@ -24,6 +25,7 @@ class CommentController extends Controller
         $comment -> user_id = Auth::id();
         $comment -> post_id = $request -> post_id;
         $comment -> save();
-        return view('posts.show', compact('post'));
+        // return view('posts.show', compact('post'));
+        return redirect()->route('posts.show',$post->id);
     }
 }
