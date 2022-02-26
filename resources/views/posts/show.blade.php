@@ -17,6 +17,8 @@
                     <input type='submit' value='削除' class="btn btn-danger" onclick='return confirm("本当に削除しますか？");'>
                 </form>
                 </div>
+                <h1></h1>
+                <h2></h2>
             </div>
         </div>
     </div>
